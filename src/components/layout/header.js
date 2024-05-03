@@ -1,5 +1,5 @@
 import React from "react";
-import Logout from "pages/logout";
+// import Logout from "pages/logout";
 import { NavLink } from "react-router-dom";
 const Header = () => {
   return (
