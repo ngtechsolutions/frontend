@@ -1,15 +1,15 @@
 import useAutoLogin from "hooks/use-auto-login";
-import useYupValidationResolver from "hooks/use-yup-validation-resolver";
-import { useForm } from "react-hook-form";
+// import useYupValidationResolver from "hooks/use-yup-validation-resolver";
+// import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 
 import { useGoogleLogin } from "@react-oauth/google";
 
 import axios from "axios";
-import InputField from "components/ui-elements/input-field";
+// import InputField from "components/ui-elements/input-field";
 
-import { loginSchema } from "configs/yup-validation-schemas";
+// import { loginSchema } from "configs/yup-validation-schemas";
 
 import { asyncLogin } from "services/reqres/requests";
 import { useState } from "react";
@@ -17,13 +17,13 @@ import { useState } from "react";
 function Login() {
   const dispatch = useDispatch();
 
-  const resolver = useYupValidationResolver(loginSchema);
+  // const resolver = useYupValidationResolver(loginSchema);
 
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm({ resolver });
+  // const {
+  //   register,
+  //   handleSubmit,
+  //   formState: { errors },
+  // } = useForm({ resolver });
 
   const onSubmit = () => {
     console.log("onSubmit", email, pass);

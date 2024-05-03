@@ -1,23 +1,23 @@
 import useAutoLogin from "hooks/use-auto-login";
-import useYupValidationResolver from "hooks/use-yup-validation-resolver";
-import { useForm } from "react-hook-form";
+// import useYupValidationResolver from "hooks/use-yup-validation-resolver";
+// import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 
-import InputField from "components/ui-elements/input-field";
+// import InputField from "components/ui-elements/input-field";
 
-import { registerSchema } from "configs/yup-validation-schemas";
+// import { registerSchema } from "configs/yup-validation-schemas";
 
 import { asyncRegister } from "services/reqres/requests";
 
 function Register() {
   const dispatch = useDispatch();
-  const resolver = useYupValidationResolver(registerSchema);
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm({ resolver });
+  // const resolver = useYupValidationResolver(registerSchema);
+  // const {
+  //   register,
+  //   handleSubmit,
+  //   formState: { errors },
+  // } = useForm({ resolver });
 
   const onSubmit = (data) => {
     console.log("hello");
@@ -39,7 +39,7 @@ function Register() {
               <form onSubmit={onSubmit} className="form-body row g-3">
                 <div className="col-12 col-lg-12">
                   <div className="d-grid gap-2">
-                    <a href="#" className="btn border border-2 border-primary">
+                    <a href="./#" className="btn border border-2 border-primary">
                       <img
                         src="assets/images/icons/google.png"
                         width="20"
